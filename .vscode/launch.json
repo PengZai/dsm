@@ -1,0 +1,40 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "(gdb) Launch",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/bin/EurocExample",
+            "args": [
+                // "/root/datasets2/Euroc_MAV/euroc-spark/MH_01_easy/mav0/cam0/data",
+                // "${workspaceFolder}/Examples/EurocData/Timestamps/MH_01_easy.txt",
+                // "${workspaceFolder}/Examples/EurocData/calib0.txt",
+                // "${workspaceFolder}/Examples/EurocData/settings.txt"
+
+                // "/root/datasets2/BotanicGarden/1018-00/1018_00_img10hz600p/left_rgb",
+                // "${workspaceFolder}/Examples/BotanicGardenData/Timestamps/1018_00_dalsa_rgb_left_image_raw_pic_timestamps.txt",
+                // "${workspaceFolder}/Examples/BotanicGardenData/dalsa_rgb0_down.txt",
+                // "${workspaceFolder}/Examples/BotanicGardenData/settings.txt"
+
+                // "/root/datasets2/BotanicGarden/1005-07/1005_07_img10hz600p/left_rgb",
+                // "${workspaceFolder}/Examples/BotanicGardenData/Timestamps/1005_07_dalsa_rgb_left_image_raw_pic_timestamps.txt",
+                // "${workspaceFolder}/Examples/BotanicGardenData/dalsa_rgb0_down.txt",
+                // "${workspaceFolder}/Examples/BotanicGardenData/settings.txt"
+
+                 "/root/datasets2/polytunnel_2025_May/easy_bag_raw_images/zed_left",
+                "${workspaceFolder}/Examples/PolyTunnelData/Timestamps/easy_bag_zed_left.txt",
+                "${workspaceFolder}/Examples/PolyTunnelData/zed_rgb_left.txt",
+                "${workspaceFolder}/Examples/PolyTunnelData/settings.txt"
+        ],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb"
+        }
+    ]
+}

@@ -29,9 +29,21 @@ set(PROJECT_NAME DSM)
 
 project(${PROJECT_NAME})
 
-IF(NOT CMAKE_BUILD_TYPE)
-  SET(CMAKE_BUILD_TYPE Release)
-ENDIF()
+option(ENABLE_CMAKE_DEBUG "Build in Debug mode" ON)
+if(ENABLE_CMAKE_DEBUG)
+
+    set(CMAKE_BUILD_TYPE "Debug")
+
+else()
+
+    set(CMAKE_BUILD_TYPE "Release")
+
+endif()
+
+set(CMAKE_CXX_FLAGS_RELEASE "-O3")
+set(CMAKE_CXX_FLAGS_DEBUG "-g3")
+
+
 
 set_property(GLOBAL PROPERTY USE_FOLDERS ON)
 
